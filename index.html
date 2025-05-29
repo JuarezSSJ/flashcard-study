@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard de Exemplo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="flashcards-grid">
+        <!-- Flashcard 1 -->
+        <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>O que é uma Tautologia?</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Uma proposição composta que é <b>sempre verdadeira</b>, independentemente dos valores lógicos de
+                        suas proposições simples. Exemplo clássico: p ∨ ~p.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flashcard 2 -->
+        <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>O que é uma Contradição?</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Uma proposição composta que é <b>sempre falsa</b>, independentemente dos valores lógicos de suas
+                        proposições simples. Exemplo clássico: p ∧ ~p.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flashcard 3 -->
+        <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Ordem de precedência dos conectivos</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>1º Negação (¬)<br>2º Conjunção (∧)<br>3º Disjunção (∨)<br>4º Condicional (→)<br>5º Bicondicional
+                        (↔)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flashcard 4 -->
+        <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Tabela Verdade com 3 variáveis</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Terá <b>2³ = 8 linhas</b>. O número de linhas é sempre 2 elevado ao número de variáveis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Tabela Verdade com 3 variáveis</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Terá <b>2³ = 8 linhas</b>. O número de linhas é sempre 2 elevado ao número de variáveis.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            <div class="flashcard-inner">
+                <div class="flashcard-front">
+                    <h2>Tabela Verdade com 3 variáveis</h2>
+                </div>
+                <div class="flashcard-back">
+                    <p>Terá <b>2³ = 8 linhas</b>. O número de linhas é sempre 2 elevado ao número de variáveis.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Adicione mais flashcards conforme necessário -->
+    </div>
+
+    <script>
+        // Adicione este script no final do body para melhor performance
+        document.querySelectorAll('.flashcard').forEach(card => {
+            card.addEventListener('click', function () {
+                this.classList.toggle('flipped');
+            });
+        });
+    </script>
+</body>
+
+</html>
